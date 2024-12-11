@@ -1,4 +1,3 @@
 ipykernel
-gTTS
 moviepy
-gTTS 
+matplotlib

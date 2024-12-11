@@ -1,16 +1,22 @@
-from config import *
-from moviepy import *
+from config import input_text
+from moviepy import TextClip
 
 
-# create text
-output_text = TextClip(
-    font=font,
-    text=input_text,
-    font_size=50,
-    color="white",
-    size=(1920, None),
-    text_align="left",
-)
+def text_clip():
+    font = "resources/font/font.ttf"
+    clip_text = TextClip(
+        font=font,
+        text=input_text,
+        font_size=70,
+        color="white",
+        size=(1920, None),
+        text_align="left",
+    )
+
+    print("TextClip is complete!")
+
+    return clip_text
 
 
-print(f"TextClip is complete!")
+if __name__ == "__main__":
+    text_clip()

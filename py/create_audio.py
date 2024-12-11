@@ -1,9 +1,8 @@
+from config import input_text, audio_filename
 from gtts import gTTS
-from config import *
 
 
 tts = gTTS(text=input_text, lang='en')
-
 tts.save(audio_filename)
 
-print(f"Audio files have been created.")
+print("Audio files have been created.")
