@@ -36,7 +36,7 @@ def get_audio_path():
     audio_files = sorted(
         glob(AUDIO_FILE), key=lambda x: int(x.split("\\")[-1].split("-")[0])
         )
-    print(len(audio_files))
+    print(f'Number of audio file : {len(audio_files)}')
 
     return audio_files
 
