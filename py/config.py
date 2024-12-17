@@ -4,7 +4,7 @@ from glob import glob
 N = 0
 
 MAIN_PATH = "C:/Users/JY810251/python/dailydictation"
-MARKDOWN_PATH = f"{MAIN_PATH}/markdown/DailyDictation_conversation_English.md"
+MD_PATH_ENG = f"{MAIN_PATH}/markdown/DailyDictation_conversation_English.md"
 AUDIO_FILE = rf"{MAIN_PATH}\mp3\*.mp3"
 
 FHD = 1920, 1080
@@ -18,7 +18,7 @@ SECTION_FONT_SIZE = 45
 
 def extract_title_section():
     # Get title and section from markdown
-    with open(MARKDOWN_PATH) as f:
+    with open(MD_PATH_ENG, mode='r', encoding='utf-8') as f:
         markdown_text = f.read()
 
     # Extract text by section using re
